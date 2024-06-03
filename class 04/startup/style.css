@@ -1,0 +1,68 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.hero {
+  background: #fefff5;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.hero h1 {
+  color: #0a8080;
+  font-size: 48px;
+  margin: 0;
+  line-height: 72px;
+}
+
+.hero p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.hero a,
+.btn {
+  display: inline-block;
+  background-color: #0a8080;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0px 4px 4px 0px #00000033;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  padding: 8px 40px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.blog-section {
+  padding: 65px 0;
+}
+
+.blog-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: center;
+  color: #0a8080;
+  margin-bottom: 78px;
+}
+
+.blogs {
+  max-width: 942px;
+  margin: auto;
+}
+
+.post {
+  background: #fefff5;
+  box-shadow: 0px 4px 20px 0px #00000026;
+  padding: 24px 40px;
+  border-radius: 10px;
+  margin-bottom: 60px;
+}
+
+.content {
+  max-width: 791px;
+}
