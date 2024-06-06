@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+  </head>
+  <body>
+    <style>
+      .flex-container {
+        /* max-width: 700px; ctrl + / */
+        background-color: rgb(163, 213, 215);
+        /* overflow-x: scroll; */
+        height: 700px;
+        margin: auto;
+        display: flex;
+        /* flex-direction: column-reverse; */
+        /* flex-flow: row wrap; */
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        /* flex-wrap: wrap; */
+      }
+
+      /* direction:row */
+      /* justify-content - > left to right  */
+      /* align-items - > top to bottom  */
+
+      /* direction:column */
+      /* align-items  - > left to right  */
+      /* justify-content - > top to bottom  */
+
+      /* .flex-container > .item {
+        flex-basis: 100%;
+      } */
+
+      .item {
+        /* width: 200px; */
+        /* flex-basis: 100%; */
+        height: 100px;
+        background-color: blueviolet;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .item-1 {
+        background-color: red;
+        order: 3;
+        flex-basis: 40%;
+        /* flex-shrink: 0; */
+        /* flex-grow: 1; */
+      }
+
+      .item-2 {
+        background-color: blue;
+        order: 1;
+        flex-basis: 60%;
+        /* flex-basis: 300px; */
+        /* flex-grow: 1; */
+      }
+
+      .item-3 {
+        background-color: black;
+        order: 4;
+        /* flex-shrink: 0; */
+        /* flex-basis: 300px; */
+        /* flex-grow: 2; */
+      }
+
+      .item-4 {
+        order: 2;
+        /* align-self: flex-start; */
+        flex-grow: 1;
+      }
+    </style>
+
+    <div class="flex-container">
+      <div class="item item-1">item - 1</div>
+      <div class="item item-2">item - 2</div>
+      <!-- <div class="item item-2">item - 2</div>
+      <div class="item item-2">item - 2</div>
+      <div class="item item-3">item - 3</div> -->
+    </div>
+  </body>
+</html>

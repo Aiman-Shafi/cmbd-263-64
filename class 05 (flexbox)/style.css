@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: rgb(218, 218, 218);
+  /* padding: 10px 0; */
+  /* background-image: url("https://websitedemos.net/mountain-02/wp-content/uploads/sites/571/2020/04/landscape-mountains-sky-4843193.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  /* height: 100vh; */
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.btn-primary {
+  background-color: #226c7a;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+/* header styles  */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: row-reverse; */
+  padding: 20px 4px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  /* flex-direction: row-reverse; */
+  gap: 30px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+/* hero styles  */
+
+.hero-container {
+  height: 90vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  /* color: white; */
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 700px;
+}
+
+.services {
+  /* padding: 100px 0; */
+  padding: 10px;
+  padding-bottom: 100px;
+}
+
+.service-container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.service {
+  /* flex-basis: 300px; */
+  width: 300px;
+  background-image: url("https://websitedemos.net/mountain-02/wp-content/uploads/sites/571/2020/04/bird-s-eye-view-photography-of-green-forest-1208379-768x512.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  background-color: #226b7a35;
+  padding: 100px 10px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.about-content {
+  flex-basis: 50%;
+}
+
+.about-content p {
+  margin: 20px 0;
+}
+
+.about-image {
+  flex-basis: 50%;
+}
