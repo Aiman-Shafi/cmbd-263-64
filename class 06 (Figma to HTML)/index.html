@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Berth</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Header Section Starts  -->
     <header>
       <div class="container">
-        <div class="header-container">
-          <div class="logo"><img src="images/Logo.png" alt="Logo" /></div>
+        <div class="header-container" data-aos="zoom-in-down">
+          <div class="logo">
+            <img src="images/Logo.png" alt="Logo" />
+          </div>
           <nav>
             <ul>
               <li><a href="#" class="active">Home</a></li>
@@ -33,7 +36,7 @@
       <!-- Hero Section Starts -->
       <section class="hero-section">
         <div class="container hero-container">
-          <div class="hero-left">
+          <div class="hero-left" data-aos="fade-up-right">
             <h1>Find the right job for you</h1>
             <p>
               Search and find your dream job is now easier than ever. Just
@@ -42,13 +45,17 @@
             <a href="#" class="btn-primary">Get Started</a>
           </div>
           <div class="hero-right">
-            <img src="images/hero-img.png" alt="hero images" />
+            <img
+              src="images/hero-img.png"
+              alt="hero images"
+              data-aos="flip-right"
+              data-aos-delay="700"
+            />
           </div>
         </div>
       </section>
       <!-- Hero Section Ends  -->
 
-      <!-- Service Sections Starts  -->
       <!-- Service Sections Starts  -->
       <section class="service-section">
         <div class="container">
@@ -86,7 +93,51 @@
           </div>
         </div>
       </section>
+      <section class="service-section">
+        <div class="container">
+          <div class="service-container">
+            <div class="box" data-aos="zoom-out-up">
+              <img src="images/indeed.png" alt="" />
+              <h2>Lorem ipsum dolor sit amet.</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                mollitia modi beatae rerum nobis placeat et quas, ea saepe
+                laboriosam.
+              </p>
+              <a href="#" class="btn-primary">Learn More</a>
+            </div>
+            <div class="box" data-aos="zoom-out-up">
+              <img src="images/indeed.png" alt="" />
+              <h2>Lorem ipsum dolor sit amet.</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                mollitia modi beatae rerum nobis placeat et quas, ea saepe
+                laboriosam.
+              </p>
+              <a href="#" class="btn-primary">Learn More</a>
+            </div>
+            <div class="box" data-aos="zoom-out-up">
+              <img src="images/indeed.png" alt="" />
+              <h2>Lorem ipsum dolor sit amet.</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                mollitia modi beatae rerum nobis placeat et quas, ea saepe
+                laboriosam.
+              </p>
+              <a href="#" class="btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Service Sections Ends  -->
     </main>
+
+    <!-- animation scripts  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // 1s , 500 -> .5s / 800 -> .8s
+      });
+    </script>
   </body>
 </html>

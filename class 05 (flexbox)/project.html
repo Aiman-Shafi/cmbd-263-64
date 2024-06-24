@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -41,14 +42,14 @@
       <section class="hero">
         <div>
           <div class="container hero-container">
-            <h2>Multi-purpose Template</h2>
+            <h2 class="tracking-in-expand">Multi-purpose Template</h2>
             <h1>Create Your Website</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
             </p>
             <div class="btn-group">
-              <a href="#" class="btn-primary">Learn More</a>
+              <a href="#" class="btn-primary vibrate-1">Learn More</a>
               <a href="#" class="btn-primary">About Us</a>
             </div>
           </div>
@@ -71,7 +72,7 @@
 
       <section class="about">
         <div class="container about-container">
-          <div class="about-content">
+          <div class="about-content" data-aos="fade-up">
             <h2>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
               dolores!
@@ -84,7 +85,7 @@
             </p>
             <a href="#" class="btn-primary">Let's go</a>
           </div>
-          <div class="about-image">
+          <div class="about-image" data-aos="fade-up" data-aos-delay="900">
             <img
               src="https://websitedemos.net/mountain-02/wp-content/uploads/sites/571/2020/04/bird-s-eye-view-photography-of-green-forest-1208379-768x512.jpg"
               alt="nature"
@@ -93,5 +94,12 @@
         </div>
       </section>
     </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+      });
+    </script>
   </body>
 </html>
