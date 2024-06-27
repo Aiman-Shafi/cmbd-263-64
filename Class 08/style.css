@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playwrite MX", cursive;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.photo {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: antiquewhite;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.photo {
+  position: relative;
+}
+
+.photo::before {
+  content: "";
+  background-image: url("https://i.pinimg.com/originals/0e/c2/cf/0ec2cf15d7de32786f05f0eae9da94c7.gif");
+  background-image: url("blob.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 4%;
+  bottom: 2%;
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  z-index: 9;
+  /* background-color: red; */
+}
+
+/* .photo::after {
+  content: "hello after";
+} */
+
+.heading {
+  position: relative;
+  display: inline-block;
+  z-index: 9;
+}
+
+.heading::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 14px;
+  background: rgb(133, 209, 2);
+  background: linear-gradient(
+    115deg,
+    rgba(133, 209, 2, 1) 12%,
+    rgba(173, 187, 7, 1) 50%,
+    rgba(10, 255, 135, 1) 100%
+  );
+  position: absolute;
+}
+
+.picture img {
+  height: 100%;
+  width: 100%;
+}
+
+/* .picture {
+  position: relative;
+}
+
+.picture::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(255, 0, 0, 0.451);
+  top: 0;
+  opacity: 0.4;
+  left: 0;
+} */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1458668383970-8ddd3927deed?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(10deg, black, rgba(128, 128, 128, 0.46));
+  /* z-index: -1; */
+}
+
+.hero button {
+  padding: 10px 20px;
+  background-color: whitesmoke;
+  color: black;
+}
