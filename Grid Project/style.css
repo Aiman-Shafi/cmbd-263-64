@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --primary-font: "Manrope", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
+  font-size: 62.5%;
+
+  --text-color: #182327;
+}
+
+body {
+  font-family: var(--secondary-font);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/* Header Styles  */
+header {
+  padding: 2.2rem;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header-container,
+.header-left,
+.header-right {
+  /* display: grid; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  /* grid-template-columns: 4rem 50.3rem 30.3rem 5.2rem 10rem; */
+}
+
+.logo img {
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 4.2rem;
+}
+
+nav ul li a {
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 2.8rem;
+}
+
+.search-bar {
+  display: flex;
+  max-width: 330px;
+  width: 330px;
+  gap: 1rem;
+  border: 1px solid #d8e0e2;
+  border-radius: 8px;
+  padding: 1.4rem;
+}
+
+.search-bar input {
+  border: none;
+  width: 100%;
+}
+
+.search-bar input::placeholder {
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #5d696d;
+  line-height: 2.8rem;
+}
+
+.user-profile-icon img {
+  background-color: var(--text-color);
+  padding: 1.5rem;
+  border-radius: 100%;
+}
+
+.primary-btn {
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  background-color: var(--text-color);
+  color: white;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+
+/* Hero Styles */
+
+.hero {
+  background-image: url(assets/images/hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 662px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.hero-left h1 {
+  font-family: var(--secondary-font);
+  font-size: 7rem;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 7.6rem;
+  position: relative;
+}
+
+.hero-left h1:after {
+  content: "";
+  width: 73px;
+  height: 54px;
+  background-image: url(assets/images/chips.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 10px;
+  right: 45%;
+}
+
+.hero-left p {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  text-align: left;
+  margin-bottom: 4rem;
+  margin-top: 2.2rem;
+}
+
+.hero-right img {
+  transform: translateX(115px) translateY(22px);
+}
+
+/* Product Section */
+.featured-products {
+  padding: 140px 0;
+}
+
+.product-container {
+  display: grid;
+  justify-content: center;
+  column-gap: 3rem;
+  row-gap: 10rem;
+  grid-template-columns: repeat(auto-fit, 370px);
+}
+
+.product-bg {
+  text-align: center;
+  height: 330px;
+  background-image: url(assets/images/herb-bg.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+
+.product-bg img {
+  margin-top: -18%;
+}
+
+.product-info {
+  position: relative;
+  padding: 3rem 0;
+}
+
+.add-to-cart {
+  border: none;
+  outline: none;
+  padding: 2rem;
+  position: absolute;
+  right: 20px;
+  bottom: 80px;
+  background-color: #182327;
+  border-radius: 100%;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    height: auto;
+  }
+  .hero-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hero-right img {
+    transform: translate(0, 0);
+  }
+}
