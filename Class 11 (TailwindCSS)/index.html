@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              satoshi: ["Satoshi", "sans-serif"],
+              rectola: ["Rectola", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-satoshi">
+    <!-- Header Section Starts -->
+    <header class="my-10 px-4">
+      <div class="max-w-[1170px] mx-auto flex items-center justify-between">
+        <img
+          src="https://framerusercontent.com/images/YSdobC45mkoLCNuWcMVS8P7xoXg.png?scale-down-to=512"
+          alt="Logo"
+          class="size-10"
+        />
+        <nav class="hidden md:flex space-x-4">
+          <a href="#">Work</a>
+          <a href="#">Proccess</a>
+          <a href="#">Experience</a>
+          <a href="#">FAQ</a>
+        </nav>
+        <a
+          href="#"
+          class="bg-black py-[12px] px-[24px] text-white rounded-[24px] hidden md:inline-block"
+          >Contact
+        </a>
+        <div class="flex items-center gap-4 md:hidden">
+          <span class="font-rectola text-xl">Menu</span>
+          <div class="hamburger flex flex-col space-y-2">
+            <span class="inline-block h-[2px] w-4 bg-black"></span>
+            <span class="inline-block h-[2px] w-4 bg-black"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section Ends -->
+    <main>
+      <!-- Hero Section Starts  -->
+      <section>
+        <div class="max-w-[1170px] mx-auto md:flex">
+          <div
+            class="hero-left flex flex-col text-center md:text-left items-center md:items-start md:justify-center space-y-7 md:w-3/5"
+          >
+            <p>Athos 2.0 - Free Framer Template Portfolio</p>
+            <h1 class="text-5xl font-rectola">
+              Your Strategic Partner for Digital Solutions
+            </h1>
+            <a
+              href="#"
+              class="bg-black py-[12px] px-[24px] text-white rounded-[24px] md:inline-block"
+              >Contact Us
+            </a>
+          </div>
+          <div class="hero-right px-4 md:w-2/5">
+            <img
+              src="https://framerusercontent.com/images/JOScA6y9eujOdlCmr9HfBncMBOE.jpg?scale-down-to=1024"
+              alt=""
+              class="max-w-full w-[545px] h-[548px] md:w-[448px] md:h-[452px] object-cover object-right mx-auto rounded-3xl mt-10"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section Ends  -->
+
+      <section class="my-10">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+          <div class="bg-slate-300 p-4 rounded-xl">
+            <h2 class="text-2xl">Lorem ipsum dolor sit.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto,
+              accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Dolorum, perferendis.
+            </p>
+          </div>
+          <div class="bg-slate-300 p-4 rounded-xl">
+            <h2 class="text-2xl">Lorem ipsum dolor sit.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto,
+              accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Dolorum, perferendis.
+            </p>
+          </div>
+          <div class="bg-slate-300 p-4 rounded-xl">
+            <h2 class="text-2xl">Lorem ipsum dolor sit.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto,
+              accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Dolorum, perferendis.
+            </p>
+          </div>
+          <div class="bg-slate-300 p-4 rounded-xl">
+            <h2 class="text-2xl">Lorem ipsum dolor sit.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto,
+              accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Dolorum, perferendis.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
