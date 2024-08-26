@@ -1,0 +1,56 @@
+let num1 = 20;
+let num2 = 30;
+
+// let num3 = 20;
+// let num4 = 30;
+
+// let add = num1 + num2;
+// let add2 = 30 + 40;
+// let add3 = num3 + num4;
+
+// console.log(add3);
+
+function add(num1 = 0, num2 = 10, num3 = 1) {
+  console.log("add:", num1 + num2 + num3);
+  console.log("subtract:", num1 - num2);
+  console.log("multiply:", num1 * num2);
+}
+
+// add(20, 40, 40);
+// add(50, 40, 10);
+// add(50, 100, 50);
+// add();
+
+function greetUser(name = "User", time = "Morning") {
+  let sentence = `hello ${name} 👋🏻, Good ${time}`;
+  console.log(sentence);
+}
+
+// greetUser("Mahi", "Evening");
+
+function searchWord(search, nature = "hello world") {
+  //   let nature = "Hello Nature!";
+  //   let search = "nature";
+
+  //   let searchValue = nature.toLowerCase().search();
+
+  //   console.log(nature.toLowerCase().search(search.toLowerCase()));
+
+  //   if (searchValue !== -1 && search !== "") {
+  //     console.log(search, "has been found!");
+  //   } else {
+  //     console.log(search, "Not found!");
+  //   }
+
+  let searchValue = nature.toLowerCase().includes(search.toLowerCase());
+
+  if (searchValue == true && search !== "") {
+    console.log(search, "has been found!");
+  } else {
+    console.log(search, "Not found!");
+  }
+}
+
+searchWord("flood", "Bangladesh is currently flood affected!");
+searchWord("current", "Bangladesh is currently flood affected!");
+searchWord("test", "Bangladesh is currently flood affected!");
