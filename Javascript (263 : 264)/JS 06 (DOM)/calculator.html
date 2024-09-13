@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="flex items-center justify-center h-screen">
+      <div
+        class="max-w-[500px] w-[500px] min-h-[400px] bg-slate-200 p-10 rounded-lg shadow-lg flex items-center flex-col gap-10"
+      >
+        <h2 class="text-center text-2xl font-bold text-gray-700">
+          Let's Calculate 🧮
+        </h2>
+
+        <div class="flex flex-col gap-2">
+          <input
+            type="number"
+            placeholder="Insert value 1"
+            class="p-3 rounded-lg"
+            id="input1"
+          />
+          <input
+            type="number"
+            placeholder="Insert value 2"
+            class="p-3 rounded-lg"
+            id="input2"
+          />
+
+          <div>
+            <button
+              class="btn text-xs bg-gray-700 rounded-lg p-2 text-white"
+              onclick="addition()"
+            >
+              Add +
+            </button>
+            <button
+              class="btn text-xs bg-gray-700 rounded-lg p-2 text-white"
+              onclick="subtract()"
+            >
+              Subtract -
+            </button>
+            <button
+              class="btn text-xs bg-gray-700 rounded-lg p-2 text-white"
+              onclick="multiply()"
+            >
+              Multiply X
+            </button>
+            <button
+              class="btn text-xs bg-gray-700 rounded-lg p-2 text-white"
+              onclick="divide()"
+            >
+              Divide /
+            </button>
+          </div>
+
+          <h2 class="text-xl mt-4 font-semibold" id="result">Result: 0</h2>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script src="app.js"></script>
+  <!-- <script>
+    const input1 = document.getElementById("input1");
+    const input2 = document.getElementById("input2");
+    const result = document.getElementById("result");
+
+    function addition() {
+      if (input1.value == "" || input2.value == "") {
+        alert("Please insert value");
+      } else {
+        const addition = parseInt(input1.value) + parseInt(input2.value);
+        result.innerHTML = `Addition: ${addition}`;
+
+        // input1.value = "";
+        // input2.value = "";
+      }
+    }
+
+    function subtract() {
+      if (input1.value == "" || input2.value == "") {
+        alert("Please insert value");
+      } else {
+        const subtract = parseInt(input1.value) - parseInt(input2.value);
+        result.innerHTML = `Subtract: ${subtract}`;
+
+        // input1.value = "";
+        // input2.value = "";
+      }
+    }
+
+    function multiply() {
+      if (input1.value == "" || input2.value == "") {
+        alert("Please insert value");
+      } else {
+        const multiply = parseInt(input1.value) * parseInt(input2.value);
+        result.innerHTML = `Multiply: ${multiply}`;
+
+        // input1.value = "";
+        // input2.value = "";
+      }
+    }
+
+    function divide() {
+      if (input1.value == "" || input2.value == "") {
+        alert("Please insert value");
+      } else {
+        const divide = parseInt(input1.value) / parseInt(input2.value);
+        result.innerHTML = `Division: ${divide}`;
+      }
+
+      //   input1.value = "";
+      //   input2.value = "";
+    }
+  </script> -->
+</html>
