@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style type="text/tailwindcss">
+    @layer components {
+      .btn-blue-01 {
+        @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4;
+      }
+
+      .delete {
+        @apply bg-red-600 p-2 text-white rounded-lg;
+      }
+
+      .edit {
+        @apply bg-green-600 p-2 text-white rounded-lg;
+      }
+
+      .task {
+        @apply p-2 flex items-center justify-between border-[1px] border-gray-200 rounded-lg;
+      }
+    }
+  </style>
+  <body>
+    <main>
+      <section>
+        <h2 class="btn-blue-01 text-center py-8 text-4xl font-bold">
+          My Task List App 📝
+        </h2>
+        <div class="max-w-xl mx-auto mt-10">
+          <form
+            id="task-form"
+            class="flex justify-between items-center border-b border-gray-200"
+          >
+            <label
+              for="UserEmail"
+              class="relative block bg-transparent pt-10 focus-within:border-blue-600"
+            >
+              <input
+                type="text"
+                id="task-input"
+                placeholder=""
+                class="input peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-xl"
+              />
+
+              <span
+                class="absolute start-0 top-0 -translate-y-1/2 text-xl font-bold text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-xl peer-focus:top-0 peer-focus:text-xl"
+              >
+                Create a task
+              </span>
+            </label>
+            <!-- Base -->
+
+            <!-- Submit Button  -->
+            <div>
+              <button
+                class="group relative inline-block text-sm font-medium text-black focus:outline-none focus:ring active:text-black"
+                id="submit"
+                type="submit"
+              >
+                <span
+                  class="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-black transition-transform group-hover:translate-x-0 group-hover:translate-y-0"
+                ></span>
+
+                <span
+                  class="relative block border border-current bg-white px-8 py-3"
+                >
+                  Add a Task
+                </span>
+              </button>
+            </div>
+
+            <!-- <input type="submit" class="cursor-pointer" /> -->
+          </form>
+        </div>
+      </section>
+
+      <section class="max-w-xl mx-auto mt-10">
+        <h3 class="font-semibold text-lg border-b border-gray-300 py-4 mb-6">
+          Task Ongoing
+        </h3>
+        <div id="task-list" class="space-y-4">
+          <!-- <div class="tasks">
+            <input
+              type="text"
+              value="create a landing page"
+              class="w-[80%]"
+              readonly
+            />
+            <div class="w-[20%]">
+              <button class="delete">Delete</button>
+              <button class="edit">Edit</button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

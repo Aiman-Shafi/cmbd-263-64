@@ -51,6 +51,42 @@ function searchWord(search, nature = "hello world") {
   }
 }
 
-searchWord("flood", "Bangladesh is currently flood affected!");
-searchWord("current", "Bangladesh is currently flood affected!");
-searchWord("test", "Bangladesh is currently flood affected!");
+// searchWord("flood", "Bangladesh is currently flood affected!");
+// searchWord("current", "Bangladesh is currently flood affected!");
+// searchWord("test", "Bangladesh is currently flood affected!");
+
+function multiply(num1, num2) {
+  let result = num1 * num2;
+  return result;
+}
+
+// console.log(multiply(29, 49));
+// let result = multiply(39, 49);
+// console.log(result);
+
+// arrow function
+const division = (num1, num2) => {
+  let addition = num1 + num2;
+  return addition;
+};
+
+const checkEven = (num) => {
+  if (num % 2 == 0) {
+    return "Even";
+  } else {
+    return "Odd Number";
+  }
+};
+
+// console.log(checkEven(31));
+// console.log(division(20, 30));
+
+//Immediately Invoked Function Expression
+
+(function () {
+  console.log("my name is islam");
+})();
+
+const newSum = (function (num1, num2) {
+  console.log(num1 + num2);
+})(20, 30);
